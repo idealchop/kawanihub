@@ -1,0 +1,21 @@
+{
+  "name": "kawanihub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kawanihub — constituent service app for a government official. Built on River Kit.",
+  "author": "River Tech",
+  "license": "UNLICENSED",
+  "copyright": "Copyright (c) 2026 River Tech. All rights reserved.",
+  "workspaces": [
+    "frontend",
+    "backend/functions"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "dev:api": "npm run serve:local --workspace=kawanihub-api",
+    "dev:local": "node scripts/dev-local.mjs",
+    "lint": "npm run lint --workspace=frontend && npm run lint --workspace=kawanihub-api",
+    "test": "npm run test --workspace=frontend && npm run test --workspace=kawanihub-api",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=kawanihub-api"
+  }
+}

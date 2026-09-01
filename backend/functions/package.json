@@ -1,0 +1,44 @@
+{
+  "name": "kawanihub-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kawanihub API gateway. Copyright (c) 2026 River Tech.",
+  "author": "River Tech",
+  "license": "UNLICENSED",
+  "copyright": "Copyright (c) 2026 River Tech. All rights reserved.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "serve:local": "ts-node-dev --respawn --transpile-only src/local-server.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run src/__tests__/unit",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.1.5",
+    "firebase-admin": "^13.8.0",
+    "firebase-functions": "^7.2.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}

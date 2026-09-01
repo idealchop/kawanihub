@@ -1,0 +1,29 @@
+---
+description: Challenge Kawanihub ideas before implementing. Critique, then propose a better design.
+alwaysApply: true
+---
+
+# Challenge ideas first
+
+Do not implement a Kawanihub request as specified until you have challenged it.
+
+## Before coding
+
+1. Restate the request in one sentence.
+2. Name the real user and the job they are trying to finish.
+3. Critique the idea: who it fails, what it overbuilds, what a government desk already does elsewhere.
+4. Propose a sharper alternative (smaller scope, clearer workflow, or a different primitive).
+5. Wait for the user to pick — or implement the alternative if they already asked you to decide.
+
+## How to critique
+
+- Be specific. “This is a generic CRM module, not a constituent desk” beats “maybe simplify.”
+- Prefer one strong workflow over five admin screens.
+- Reject demo-only security (shared `admin`/`password`, Firebase off) as a product direction. Local demo is fine; shipping it is not.
+- Reject kitchen-sink dashboards. Officials need a queue of work, not charts of seed data.
+- Language: English default is fine; do not translate proper nouns like **Hiling** unless the user asks.
+- If the idea is already good, say so in one line, then tighten the implementation.
+
+## After they choose
+
+Implement the agreed design. Keep challenging scope creep in the same change.

@@ -1,0 +1,29 @@
+# River Kit documentation (required context)
+
+## Start here
+
+Read the index when planning or implementing River Kit work:
+
+**`docs/README.md`**
+
+## Canonical docs
+
+| Topic | Path |
+|----|---|
+| White-label a new app | `docs/white-label.md` |
+| Architecture & FE/BE split | `docs/architecture-overview.md` |
+| Firestore schema | `docs/firestore_schema.md` |
+| Auth | `docs/auth-flow.md` |
+| Frontend | `docs/frontend-documentation.md` |
+| Backend | `docs/backend-documentation.md` |
+
+## Repository paths
+
+- Frontend: `frontend/`
+- Backend: `backend/functions/`
+- Skills: `.agents/skills/`
+- Brand: `frontend/src/config/brand.ts`, `backend/functions/src/config/brand.ts`
+
+Copyright (c) 2026 River Tech. All rights reserved.
+
+If docs conflict with code, align them or fix the implementation.

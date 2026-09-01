@@ -1,0 +1,71 @@
+# Firebase App Hosting — Kawanihub frontend
+# https://firebase.google.com/docs/app-hosting/configure
+
+kind: "AppStack"
+apiVersion: "v1"
+
+runConfig:
+  minInstances: 0
+  memoryMiB: 512
+  cpu: 1
+
+env:
+  - variable: NEXT_PUBLIC_DEMO_MODE
+    value: "false"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_API_BASE_URL
+    value: "https://asia-southeast1-aquaflow-management-suite.cloudfunctions.net/kawanihubApi"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: "AIzaSyCbbvsSnCnK7L65WY7sZ5VKcaxu1HB_0aU"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: "aquaflow-management-suite.firebaseapp.com"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_DATABASE_URL
+    value: "https://aquaflow-management-suite-default-rtdb.asia-southeast1.firebasedatabase.app"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: "aquaflow-management-suite"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: "aquaflow-management-suite.firebasestorage.app"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "185761068269"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: "1:185761068269:web:dd3c8c366ed6232797c8e4"
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: "G-BRJB9MCWB9"
+    availability:
+      - BUILD
+      - RUNTIME
