@@ -6,9 +6,9 @@
 
 export const brand = {
   legalName: 'River Tech',
-  productName: 'Kawanihub',
-  productSlug: 'kawanihub',
-  shortName: 'Kawani',
+  productName: 'Demo App',
+  productSlug: 'demo-app',
+  shortName: 'Demo',
   tagline: 'Sentro ng serbisyo para sa taumbayan.',
   description:
     'Personal na app ng isang opisyal ng gobyerno — tumanggap ng solicitation, maglabas ng anunsyo, at maghatid ng tulong sa mamamayan.',
