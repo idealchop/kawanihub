@@ -22,6 +22,3 @@ for (const entry of ['.next', 'node_modules', 'package.json', 'server.js']) {
 }
 
 rmSync(nestedAppDir, { recursive: true, force: true });
-if (existsSync(join(standaloneDir, 'node_modules'))) {
-  rmSync(join(standaloneDir, 'node_modules'), { recursive: true, force: true });
-}
