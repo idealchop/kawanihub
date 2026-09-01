@@ -22,3 +22,16 @@ for (const entry of ['.next', 'node_modules', 'package.json', 'server.js']) {
 }
 
 rmSync(nestedAppDir, { recursive: true, force: true });
+
+const workspaceModules = join(process.cwd(), '..', 'node_modules');
+const standaloneModules = join(standaloneDir, 'node_modules');
+const hoistedPackages = ['react', 'react-dom', 'scheduler'];
+
+for (const pkg of hoistedPackages) {
+  const source = join(workspaceModules, pkg);
+  if (!existsSync(source)) continue;
+
+  const target = join(standaloneModules, pkg);
+  rmSync(target, { recursive: true, force: true });
+  cpSync(source, target, { recursive: true });
+}
